@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    filter: invert(0);
+    background-color: rgb(173, 171, 171);
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(34, 34, 34);
+    margin: auto;
+    width: 1150px;
+    height: 380px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 15px 10px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    /* width: 90%; */
+    height: 50px;
+    /* border: 1px solid red; */
+    margin: 5px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.rows a {
+    background-color: rgb(65, 59, 59);
+    color: white;
+    width: 20px;
+    height: 25px;
+    padding: 15px 15px;
+    margin: 0 8px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 3px 5px;
+    cursor: pointer;
+    padding-top: 5px;
+    user-select: none;
+}
+
+.rows a:hover {
+    background-color: rgb(190, 186, 186);
+    color: black;
+    /* filter: invert(1); */
+}
+
+.rows a:hover img {
+    filter: invert(1);
+}
+
+.rows a:active {
+    box-shadow: 0 0;
+    background-color: rgb(206, 204, 204);
+    color: rgb(70, 69, 69);
+}
+
+/* Specials Buttons */
+
+#back {
+    width: 63px;
+}
+
+#tab {
+    width: 64px;
+}
+
+#caps {
+    width: 80px;
+}
+
+#enter {
+    width: 70px;
+}
+
+a.shft {
+    width: 108px;
+}
+
+#win {
+    padding: 15px 0px;
+    padding-right: 3px;;
+    width: 45px;
+    height: 15px;
+}
+
+#win img {
+    height: 30px;
+    width: 48px;
+    margin-top: -8px;
+}
+
+a.ctrl {
+    width: 40px;
+}
+
+a.alt {
+    width: 40px;
+}
+
+#space {
+    width: 320px;
+    height: 15px;
+    padding: 15px 0;
+}
+
+#space img {
+    height: 32px;
+    width: 80px;
+}
+
+#option {
+    width: 40px;
+}
+
+#fn {
+    width: 40px;
+}
+
+#rowno5 {
+    padding-right: 52px;
+}

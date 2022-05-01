@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-16">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>On Screen Keyboard</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/baseStyle.css">
+</head>
+<body>
+	<div class="top-row">
+		<nav id="navbar">
+			<ul>
+				<div id="logo">
+					<img src="images/logo.png">
+				</div>
+				<h2>On-Screen Keyboard</h2>
+			</ul>
+		</nav>
+		<div class="dropdown">
+			<button id="theme-btn"> Change Theme </button>
+			<div class="content">
+				<a onclick="change_theme(true)"> Dark </a>
+				<a onclick="change_theme(false)"> Light </a>
+			</div>
+		</div>
+	</div>
+	<form class="input-box">
+		<textarea class="inp" name="message" id='output' placeholder="Enter here..."></textarea>
+		<input type="reset" onclick="clear_all()" class="btn" value="Clear">
+	</form>
+	</div>
+
+	<div class="container">
+		<div class="rows" id="rowno1">
+			<a onclick="button_clicked('`', '~')"> ~ ` </a>
+			<a onclick="button_clicked('1', '!')"> ! 1 </a> 
+			<a onclick="button_clicked('2', '@')"> @ 2 </a> 
+			<a onclick="button_clicked('3', '#')"> # 3 </a> 
+			<a onclick="button_clicked('4', '$')"> $ 4 </a> 
+			<a onclick="button_clicked('5', '%')"> % 5 </a> 
+			<a onclick="button_clicked('6', '^')"> ^ 6 </a> 
+			<a onclick="button_clicked('7', '&')"> & 7 </a> 
+			<a onclick="button_clicked('8', '*')"> * 8 </a> 
+			<a onclick="button_clicked('9', '(')"> ( 9 </a> 
+			<a onclick="button_clicked('0', ')')"> ) 0 </a> 
+			<a onclick="button_clicked('-', '_')"> _ - </a> 
+			<a onclick="button_clicked('=', '+')"> + = </a>
+			<a id='back' onclick="back_space()">⬅</a>
+		</div>
+		<div class="rows" id="rowno2">
+			<a id='tab' onclick="button_clicked('&#09;', '&#09;')"> Tab ↔ </a>
+			<a onclick="button_clicked('q', 'Q' )"> Q </a> 
+			<a onclick="button_clicked('w', 'W' )"> W </a> 
+			<a onclick="button_clicked('e', 'E' )"> E </a> 
+			<a onclick="button_clicked('r', 'R' )"> R </a>  
+			<a onclick="button_clicked('t', 'T' )"> T </a> 
+			<a onclick="button_clicked('y', 'Y' )"> Y </a> 
+			<a onclick="button_clicked('u', 'U' )"> U </a> 
+			<a onclick="button_clicked('i', 'I' )"> I </a> 
+			<a onclick="button_clicked('o', 'O' )"> O </a> 
+			<a onclick="button_clicked('p', 'P' )"> P </a>
+			<a onclick="button_clicked('[', '{' )"> { [ </a>
+			<a onclick="button_clicked(']', '}' )"> } ] </a>
+			<a onclick="button_clicked(`\\`, '|' )"> | \ </a>
+		</div>
+		<div class="rows" id="rowno3"> 
+			<a id="caps" onclick="caps_clicked()"> Caps </a>
+			<a onclick="button_clicked('a', 'A')"> A </a> 
+			<a onclick="button_clicked('s', 'S')"> S </a> 
+			<a onclick="button_clicked('d', 'D')"> D </a> 
+			<a onclick="button_clicked('f', 'F')"> F -</a>
+			<a onclick="button_clicked('g', 'G')"> G </a> 
+			<a onclick="button_clicked('h', 'H')"> H </a> 
+			<a onclick="button_clicked('j', 'J')"> J -</a>
+			<a onclick="button_clicked('k', 'K')"> K </a> 
+			<a onclick="button_clicked('l', 'L')"> L </a>
+			<a onclick="button_clicked(';', ':')"> : ; </a>
+			<a onclick="button_clicked(`&#39;`, `&#34;`)"> " ' </a>
+			<a id="enter" onclick="button_clicked('\n', '\n')"> Enter </a>
+		</div>
+		<div class="rows" id="rowno4">
+			<a class='shft' onclick="sft_clicked()"> Shift ⬆ </a>
+			<a onclick="button_clicked('z', 'Z')"> Z </a> 
+			<a onclick="button_clicked('x', 'X')"> X </a> 
+			<a onclick="button_clicked('c', 'C')"> C </a> 
+			<a onclick="button_clicked('v', 'V')"> V </a> 
+			<a onclick="button_clicked('b', 'B')"> B </a> 
+			<a onclick="button_clicked('n', 'N')"> N </a> 
+			<a onclick="button_clicked('m', 'M')"> M </a> 
+			<a onclick="button_clicked(',', '<')"> < , </a>
+			<a onclick="button_clicked('.', '>')"> > . </a>
+			<a onclick="button_clicked('/', '?')"> ? / </a>
+			<a class='shft' onclick="sft_clicked()"> ⬆ Shift </a>
+		</div>
+		<div class="rows" id="rowno5">
+			<a class='ctrl' onclick="button_clicked()">Ctrl</a>
+			<a id='win' onclick="button_clicked()">
+				<img src="images/win.png" alt="Error">
+			</a>
+			<a id='fn'onclick="button_clicked()">fn</a>
+			<a class='alt' onclick="alt_clicked()">Alt</a>
+			<a id='space' onclick="space()"><img src="images/space.png" alt="Error"></a>
+			<a class='alt' onclick="alt_clicked()">Alt</a>
+			<a id='option' onclick="option_clicked()">📝</a>
+			<a class='ctrl' onclick="ctrl_clicked()">Ctrl</a>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src='index.js'></script>	
+<footer id="footer">
+	<div>Copyright © 2022 | All Rights Reserved</div>
+ 	<div> Developed by Sarthak Sharma </div>
+</footer>
+</html>
